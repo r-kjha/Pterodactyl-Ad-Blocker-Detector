@@ -9,9 +9,9 @@ This will block adblockers on all of the server pages, The ad blocked page is ve
 Install instructions:
 Run these:
 - If you do not have yarn installed run through this https://pterodactyl.io/community/customization/panel.html
-- Yarn add adblock-detect-react
+- ```yarn add adblock-detect-react```
 - Download all folders and upload them to the panel.
-- Run yarn build:production
+- Run ```yarn build:production```
 
 
 If you run into any issues or want to commision me for custom work dm me on discord Reflex#4444
