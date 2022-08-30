@@ -9,12 +9,15 @@ const AdBlockDetectedFrame = () => {
     return(
         <div className='flex flex-col text-center justify-center items-center'>
             <div>
-               Weve Detected your using an adblocker 
+                <img src="https://i.imgur.com/3fPLTAL.png" alt="TeroHost" width="128" height="128">
             </div>
             <div>
-                Please disable it to continue using our services
+               It looks like you're using an ad blocker. That's okay.  Who doesn't?  
             </div>
-            <Button  onClick={refreshPage}  className={' mt-4'}>I understand, Ive turned it off.</Button>
+            <div>
+                But without advertising-income, we can't keep making this site awesome.
+            </div>
+            <Button  onClick={refreshPage}  className={' mt-4'}>I understand, I have disabled my ad blocker.  Let me in!</Button>
         </div>
     )
 };
