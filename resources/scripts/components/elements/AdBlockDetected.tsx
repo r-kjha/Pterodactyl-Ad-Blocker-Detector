@@ -17,10 +17,10 @@ const AdBlockDetectedFrame = () => {
                <br/>
             </div>
             <div>
-               It looks like you're using an ad blocker. That's okay.  Who doesn't?  
+               It looks like you're using an ad blocker.  
             </div>
             <div>
-               But without advertising-income, we can't keep making this site awesome.
+               Please disable your ad blocker to continue using this site.
             </div>
             <Button  onClick={refreshPage}  className={' mt-4'}>I understand, I have disabled my ad blocker.  Let me in!</Button>
         </div>
