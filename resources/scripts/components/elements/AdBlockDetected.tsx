@@ -9,7 +9,10 @@ const AdBlockDetectedFrame = () => {
     return(
         <div className='flex flex-col text-center justify-center items-center'>
             <div>
-               <h1>AdBlocker Detected</h1>
+              <img src="https://i.imgur.com/3fPLTAL.png" alt="TeroHost" width="128" height="128"/>
+            </div>
+            <div>
+               <h1>ADBLOCKER DETECTED</h1>
             </div>
             <div>
                It looks like you're using an ad blocker. That's okay.  Who doesn't?  
