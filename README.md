@@ -15,3 +15,38 @@ Run these:
 
 
 If you run into any issues or want to commision me for custom work dm me on discord Reflex#4444
+
+
+```typescript
+import PageContentBlock, { PageContentBlockProps } from '@/components/elements/PageContentBlock';
+import React from 'react';
+import { ServerContext } from '@/state/server';
+
+------------2 lines Below This 
+import { useDetectAdBlock } from 'adblock-detect-react';
+import AdBlockDetectedFrame from './AdBlockDetected'
+-------------------------
+
+interface Props extends PageContentBlockProps {
+    title: string;
+}
+
+const ServerContentBlock: React.FC<Props> = ({ title, children, ...props }) => {
+    const name = ServerContext.useStoreState((state) => state.server.data!.name);
+--------1 Line below this
+    const adBlockDetected = useDetectAdBlock();
+-------------------------
+
+    return (
+        <PageContentBlock title={`${name} | ${title}`} {...props}>
+
+-------2 Lines Below this {Children} already exists 
+            {!adBlockDetected && <div>{children}</div>}
+            {adBlockDetected && <AdBlockDetectedFrame/>}
+-------------------------------------------
+        </PageContentBlock>
+    );
+};
+
+export default ServerContentBlock;
+```
